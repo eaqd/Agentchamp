@@ -16,6 +16,7 @@ from typing import Callable
 from src.models import Instance, Solution
 from src.parser import parse_vrp
 from src.solvers.classical import clarke_wright
+from src.solvers.multi_agent import multi_agent
 from src.solvers.single_agent import single_agent
 from src.validator import compute_cost, validate
 
@@ -24,6 +25,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SOLVERS: dict[str, Callable[[Instance], Solution]] = {
     "clarke_wright": clarke_wright,
     "single_agent": single_agent,
+    "multi_agent": multi_agent,
 }
 
 
