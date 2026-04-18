@@ -1,0 +1,32 @@
+# Environment / secrets
+.env
+.env.local
+
+# uv / virtualenv
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Benchmark data (regeneratable via scripts/download_data.py)
+data/raw/*.vrp
+data/solutions/*.sol
