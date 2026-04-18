@@ -30,3 +30,6 @@ Thumbs.db
 # Benchmark data (regeneratable via scripts/download_data.py)
 data/raw/*.vrp
 data/solutions/*.sol
+
+# LLM response cache (cheap to regenerate; may contain prompt contents)
+.cache/
